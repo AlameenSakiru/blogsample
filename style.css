@@ -309,10 +309,38 @@ img {
     letter-spacing: 2px;
 }
 
-@media screen and (min-width:1024px) {
-    
+@media (max-width: 1200px) {
+    .design-item, .blog-item {
+        width: calc(50% - 1rem);
+    }
 }
 
-@media screen and (min-width:768px) and (max-width: 1023px){
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
     
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .design-item,  .blog-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .blog-item {
+        padding: 2rem;
+    }
 }
